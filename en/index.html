@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Follow.az</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="images/logo.svg" class="logo-img" onclick="openMainPage()">
+            <div class="lang-container">
+                <div class="lang-content" onclick="showLangContent()" tabindex="0" onblur="hideLangContent()">
+                    <img src="images/en.png" class="lang-en-img">
+                    <div class="lang" id="lang">
+                        <img src="images/az.png" class="lang-az-img" onclick="openAz()">
+                        <hr class="lang-border">
+                        <img src="images/ru.png" class="lang-ru-img" onclick="openRu()">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-header">
+            <img src="images/instagram.svg" class="social-button-1" onclick="openInstagram()">
+            <img src="images/whatsapp.svg" class="social-button-2" onclick="openWhatsApp()">
+        </div>
+
+        <div class="text-header">
+            <p class="text-header-first">Sizə lazım olan xidmət üzrə hesablamalar aparın</p>
+            <p class="text-header-second">Prices were updated on 06.08.2020 15:06</p>
+        </div>
+
+        <div class="input-container">
+            <p class="inputs-header">Sosial şəbəkə</p>
+            <div class="custom-select" id="custom-select-1" onclick="openSocialNetworkElement()" tabindex="0" onblur="hideDialog()">
+                <p class="social-network-first-text" id="social-network-first-text">--Siyahıdan seçin...</p>
+                <div class="social-network-list" id="social-network-list"></div>
+            </div>
+
+            <p class="inputs-header" id="service-input-header">Xidmət</p>
+            <div class="custom-select custom-select-disabled" id="custom-select-2" onclick="openServiceElement()" tabindex="0" onblur="hideDialog()">
+                <p class="service-first-text" id="service-first-text">--Siyahıdan seçin...</p>
+                <div class="service-list" id="service-list"></div>
+            </div>
+
+            <p class="inputs-header">Xidmət növü</p>
+            <div class="custom-select custom-select-disabled" id="custom-select-3" onclick="openServiceSubElement()" tabindex="0" onblur="hideDialog()">
+                <p class="service-sub-first-text" id="service-sub-first-text">--Siyahıdan seçin...</p>
+                <div class="service-sub-list" id="service-sub-list"></div>
+            </div>
+
+            <p class="inputs-header">Miqdar</p>
+            <input type="tel" class="order order-input-disabled" disabled id="order" placeholder="Rəqəm daxil edin" onkeyup="calculatePriceFromImput()"/>
+            <p class="min-max-text">Min&nbsp;:&nbsp;<span id="min-text">0</span>&nbsp;&nbsp;&nbsp;&nbsp;Max&nbsp;:&nbsp;<span id="max-text">0</span></p>
+            
+            <hr class="border"/>
+            <p class="price-header">Qiymət</p>
+            <p class="price-text"><span id="price-text">0.0</span>&nbsp;AZN</p>
+        </div>
+
+        <div class="sub-footer">
+            <p class="sub-footer-text">Necə işləyir:</p>
+            <p class="sub-footer-text">1. Hesablamanı Skrin edin</p>
+            <p class="sub-footer-text">2. <a href="https://wa.me/13024992023" class="sub-footer-wp-link" target="_blank">Whatsapp</a> nömrəmizə göndərin </p>
+            <p class="sub-footer-text">3. Ödəniş olunduqdan sonra, xidmətin çatdırılmasını gözləyin</p>
+        </div>
+
+        <div class="footer">
+            <p class="footer-text">©&nbsp;2020&nbsp;
+                <a href="https://follow.az" class="follow-link">follow.az</a>&nbsp;|&nbsp;
+                <a href="https://ideas.foundation" class="ideas-link" target="_blank">ideas.foundation</a></p>
+        </div>
+
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
