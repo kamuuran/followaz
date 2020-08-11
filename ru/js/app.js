@@ -621,6 +621,34 @@ function calculatePriceFromImput(){
     calculatePrice(serviceSubElement);
 }
 
+function openMainPage(){
+    window.location.href = '/ru/';
+}
+
+function openInstagram(){
+    window.open("https://instagram.com/follow.azsocial");
+}
+
+function openWhatsApp(){
+    window.open("https://wa.me/13024992023");
+}
+
+function showLangContent(){
+    $('#lang').toggle(30);
+}
+
+function hideLangContent(){
+    $('#lang').hide(30);
+}
+
+function openAz(){
+    window.location.href = '../';
+}
+
+function openEn(){
+    window.location.href = '../en/';
+}
+
 var socialNetworkArray = [
                         "--Siyahıdan seçin...", 
                         "Instagram", 
