@@ -1,4 +1,3 @@
-<script>
   $(document).ready( function () {
 
     var socialNetworkHtml = '';
@@ -743,4 +742,3 @@ var websiteArray = [
                         "Youtube-dan trafik | 10m",
                         "Google-dan trafik | 10m"
                     ];
-</script>
