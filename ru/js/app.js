@@ -1,4 +1,4 @@
-$(document).ready( function () {
+  $(document).ready( function () {
 
     var socialNetworkHtml = '';
     for(i=0; i<socialNetworkArray.length; i++){
@@ -229,7 +229,7 @@ function selectToService(id){
         $('#service-sub-list').html(serviceSubList);
         clearData4();
 
-    } else if(sosialNetworkElement == 'Facebook' && serviceElement == 'Abonə, Səhifə bəyənilməsi'){
+    } else if(sosialNetworkElement == 'Facebook' && serviceElement == 'Abunə, Səhifə bəyənilməsi'){
 
         var serviceSubList = '';
         for(i=0; i<facebookSubscribeArray.length; i++){
@@ -259,7 +259,7 @@ function selectToService(id){
         $('#service-sub-list').html(serviceSubList);
         clearData4();
 
-    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Abonəlik, Like, Şərh'){
+    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Abunəlik, Like, Şərh'){
 
         var serviceSubList = '';
         for(i=0; i<youtubeSubscribeArray.length; i++){
@@ -310,11 +310,11 @@ function selectToSubService(id){
         clearData5();
         setMinMaxQuantity(100, 13000);
 
-    } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Abunə' && serviceSubElement == 'Auto | Max 100k | Qarışıq istifadəçilər | 5k/gün | 30 gün') {
+    } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Abunə' && serviceSubElement == 'Auto | Max 70k | Qarışıq istifadəçilər | 5k/gün | 30 gün') {
         clearData5();
         setMinMaxQuantity(10, 100000);
 
-    } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Like' && serviceSubElement == 'Max 1k | Sürətli | Real istifadəçilər') {
+    } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Like' && serviceSubElement == 'Max 1k | Sürətli çatdırılma') {
         clearData5();
         setMinMaxQuantity(50, 1000);
 
@@ -362,7 +362,7 @@ function selectToSubService(id){
         clearData5();
         setMinMaxQuantity(50, 10000000);
 
-    } else if(sosialNetworkElement == 'Facebook' && serviceElement == 'Abonə, Səhifə bəyənilməsi' && serviceSubElement == 'Səhifə like-ları | Qarışıq | Sürətli') {
+    } else if(sosialNetworkElement == 'Facebook' && serviceElement == 'Abunə, Səhifə bəyənilməsi' && serviceSubElement == 'Səhifə like-ları | Qarışıq | Sürətli') {
         clearData5();
         setMinMaxQuantity(20, 3000);
 
@@ -394,19 +394,19 @@ function selectToSubService(id){
         clearData5();
         setMinMaxQuantity(20, 2000);
 
-    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Abonəlik, Like, Şərh' && serviceSubElement == 'Abunəlik | Qarışıq') {
+    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Abunəlik, Like, Şərh' && serviceSubElement == 'Abunəlik | Qarışıq') {
         clearData5();
         setMinMaxQuantity(100, 500000);
 
-    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Abonəlik, Like, Şərh' && serviceSubElement == 'Video Like') {
+    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Abunəlik, Like, Şərh' && serviceSubElement == 'Video Like') {
         clearData5();
         setMinMaxQuantity(50, 5000);
 
-    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Abonəlik, Like, Şərh' && serviceSubElement == 'Video Dislikes') {
+    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Abunəlik, Like, Şərh' && serviceSubElement == 'Video Dislikes') {
         clearData5();
         setMinMaxQuantity(100, 1000000);
 
-    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Abonəlik, Like, Şərh' && serviceSubElement == 'Şərh | Qarışıq') {
+    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Abunəlik, Like, Şərh' && serviceSubElement == 'Şərh | Qarışıq') {
         clearData5();
         setMinMaxQuantity(10, 10000);
 
@@ -414,13 +414,9 @@ function selectToSubService(id){
         clearData5();
         setMinMaxQuantity(1000, 100000);
 
-    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Digər' && serviceSubElement == 'İzlənmə saatları | Ömürlük zəmanət | Sürətli') {
+    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Digər' && serviceSubElement == 'Baxış sayları | Sürətli') {
         clearData5();
-        setMinMaxQuantity(1000, 100000000);
-
-    } else if(sosialNetworkElement == 'Youtube' && serviceElement == 'Digər' && serviceSubElement == '4000 izlənmə saatı | 30 günlük zəmanət') {
-        clearData5();
-        setMinMaxQuantity(1000, 4000);
+        setMinMaxQuantity(100, 500000);
 
     } else if(sosialNetworkElement == 'TikTok' && serviceSubElement == 'Like-lar | Max 7k | 150 like / gün') {
         clearData5();
@@ -497,10 +493,10 @@ function calculatePrice(serviceType){
     } else if(serviceType == 'Max 13k | Qarışıq istifadəçilər | 0-1 hours'){
         price = order * 0.0055;
 
-    } else if(serviceType == 'Auto | Max 100k | Qarışıq istifadəçilər | 5k/gün | 30 gün'){
-        price = order * 0.0071;
+    } else if(serviceType == 'Auto | Max 70k | Qarışıq istifadəçilər | 5k/gün | 30 gün'){
+        price = order * 0.0095;
 
-    } else if(serviceType == 'Max 1k | Sürətli | Real istifadəçilər'){
+    } else if(serviceType == 'Max 1k | Sürətli çatdırılma'){
         price = order * 0.0023;
 
     } else if(serviceType == 'Likes + Baxışlar | Şəkil və ya Video | Max 30k | 0-1 s | 80% bot Xarici 20% bot Türk'){
@@ -522,7 +518,7 @@ function calculatePrice(serviceType){
         price = order * 1.1320;
 
     } else if(serviceType == '10k+ istifadəçilər | 5 şərh | 1 saat'){
-        price = order * 0.0082;
+        price = order * 1.64;
 
     } else if(serviceType == 'TƏSDİQLƏNMİŞ hesablar | İstədiyin şərh | 24 saat'){
         price = order * 2.0376;
@@ -554,11 +550,8 @@ function calculatePrice(serviceType){
     } else if(serviceType == 'Canlı yayım baxışları | Qazanclı | Real | Sürətli'){
         price = order * 0.0150;
 
-    } else if(serviceType == 'İzlənmə saatları | Ömürlük zəmanət | Sürətli'){
-        price = order * 0.0042;
-
-    } else if(serviceType == '4000 izlənmə saatı | 30 günlük zəmanət'){
-        price = order * 0.0736;
+    } else if(serviceType == 'Baxış sayları | Sürətli'){
+        price = order * 0.00746;
 
     } else if(serviceType == 'Səhifə like-ları | Qarışıq | Sürətli'){
         price = order * 0.0100;
@@ -628,34 +621,6 @@ function calculatePriceFromImput(){
     calculatePrice(serviceSubElement);
 }
 
-function openMainPage(){
-    window.location.href = '/ru/';
-}
-
-function openInstagram(){
-    window.open("https://instagram.com/follow.azsocial");
-}
-
-function openWhatsApp(){
-    window.open("https://wa.me/13024992023");
-}
-
-function showLangContent(){
-    $('#lang').toggle(30);
-}
-
-function hideLangContent(){
-    $('#lang').hide(30);
-}
-
-function openAz(){
-    window.location.href = '../';
-}
-
-function openEn(){
-    window.location.href = '../en/';
-}
-
 var socialNetworkArray = [
                         "--Siyahıdan seçin...", 
                         "Instagram", 
@@ -679,12 +644,12 @@ var instagramSubscribeArray = [
                         "Max 1k | Sürətli", 
                         "Max 5k | 0-60min", 
                         "Max 13k | Qarışıq istifadəçilər | 0-1 hours", 
-                        "Auto | Max 100k | Qarışıq istifadəçilər | 5k/gün | 30 gün"
+                        "Auto | Max 70k | Qarışıq istifadəçilər | 5k/gün | 30 gün"
                     ];
 
 var instagramLikeArray = [
                         "--Siyahıdan seçin...", 
-                        "Max 1k | Sürətli | Real istifadəçilər", 
+                        "Max 1k | Sürətli çatdırılma", 
                         "Likes + Baxışlar | Şəkil və ya Video | Max 30k | 0-1 s | 80% bot Xarici 20% bot Türk", 
                         "Max 20k | 0/30 dəq | Real istifadəçilər", 
                         "Auto | Max 49k | Hər yeni post | Normal sürət",
@@ -709,7 +674,7 @@ var instagramWatchArray = [
 
 var facebookServiceArray = [
                         "--Siyahıdan seçin...", 
-                        "Abonə, Səhifə bəyənilməsi", 
+                        "Abunə, Səhifə bəyənilməsi", 
                         "Bəyənilmə", 
                         "Canlı"
                     ];
@@ -736,7 +701,7 @@ var facebookLiveArray = [
 
 var youtubeServiceArray = [
                         "--Siyahıdan seçin...", 
-                        "Abonəlik, Like, Şərh", 
+                        "Abunəlik, Like, Şərh", 
                         "Digər"
                     ];
 
@@ -751,8 +716,7 @@ var youtubeSubscribeArray = [
 var youtubeOtherArray = [
                         "--Siyahıdan seçin...", 
                         "Canlı yayım baxışları | Qazanclı | Real | Sürətli", 
-                        "İzlənmə saatları | Ömürlük zəmanət | Sürətli",
-                        "4000 izlənmə saatı | 30 günlük zəmanət"
+                        "Baxış sayları | Sürətli"
                     ];
 
 var tiktokArray = [
