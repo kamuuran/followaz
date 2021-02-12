@@ -549,7 +549,7 @@ function calculatePrice(serviceType){
     } else if(serviceType == 'IGTV baxışlar'){
         price = order * 0.00018;
 
-    } else if(serviceType == 'Digər'){
+    } else if(serviceType == 'Yadda saxla'){
         price = order * 0.0015;
       
     } else if(serviceType == 'Abunəlik | Qarışıq'){
