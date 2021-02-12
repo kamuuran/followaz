@@ -228,17 +228,17 @@ function selectToService(id){
 
         $('#service-sub-list').html(serviceSubList);
         clearData4();
-      
+      // ---------------------------------------------------------------------------
     } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Yadda saxla'){
 
-  var serviceSubList = '';
-  for(i=0; i<instagramSaveArray.length; i++){
-      serviceSubList = serviceSubList + '<p class="service-sub-other-text" id="instagramSaveElement'+i+'" onclick="selectToSubService(\'instagramSaveElement'+i+'\')">' + instagramSaveArray[i] + '</p>';
-  }
+        var serviceSubList = '';
+        for(i=0; i<instagramSaveArray.length; i++){
+            serviceSubList = serviceSubList + '<p class="service-sub-other-text" id="instagramSaveElement'+i+'" onclick="selectToSubService(\'instagramSaveElement'+i+'\')">' + instagramSaveArray[i] + '</p>';
+        }
 
-  $('#service-sub-list').html(serviceSubList);
-  clearData4();
-
+        $('#service-sub-list').html(serviceSubList);
+        clearData4();
+        // ------------------------------------------------------------------------------
     } else if(sosialNetworkElement == 'Facebook' && serviceElement == 'Abunə, Səhifə bəyənilməsi'){
 
         var serviceSubList = '';
@@ -550,8 +550,7 @@ function calculatePrice(serviceType){
         price = order * 0.00018;
 
     } else if(serviceType == 'Yadda saxla'){
-  price = order * 0.0015;
-
+        price = order * 0.0015;
       
     } else if(serviceType == 'Abunəlik | Qarışıq'){
         price = order * 0.1174;
@@ -648,7 +647,7 @@ function openInstagram(){
 }
 
 function openWhatsApp(){
-    window.open("https://wa.me/994506338010");
+    location.href = "https://wa.me/994506338010";
 }
 
 function showLangContent(){
@@ -682,7 +681,8 @@ var instagramServiceArray = [
                         "Abunə", 
                         "Like", 
                         "Şərh", 
-                        "Baxış"
+                        "Baxış",
+                        "Yadda saxla"
                     ];
 
 var instagramSubscribeArray = [
