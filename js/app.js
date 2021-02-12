@@ -229,7 +229,7 @@ function selectToService(id){
         $('#service-sub-list').html(serviceSubList);
         clearData4();
       // ---------------------------------------------------------------------------
-    } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Yadda saxla'){
+    } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Digər'){
 
         var serviceSubList = '';
         for(i=0; i<instagramSaveArray.length; i++){
@@ -682,7 +682,7 @@ var instagramServiceArray = [
                         "Like", 
                         "Şərh", 
                         "Baxış",
-                        "Yadda saxla"
+                        "Digər"
                     ];
 
 var instagramSubscribeArray = [
