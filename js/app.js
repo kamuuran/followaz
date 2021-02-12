@@ -372,7 +372,7 @@ function selectToSubService(id){
         clearData5();
         setMinMaxQuantity(50, 10000000);
       
-    } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Yadda saxla' && serviceSubElement == 'Yadda saxla') {
+    } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Yadda saxla' && serviceSubElement == 'Digər') {
       clearData5();
       setMinMaxQuantity(500, 20000);
 
