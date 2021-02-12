@@ -228,6 +228,16 @@ function selectToService(id){
 
         $('#service-sub-list').html(serviceSubList);
         clearData4();
+      
+    } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Yadda saxla'){
+
+  var serviceSubList = '';
+  for(i=0; i<instagramSaveArray.length; i++){
+      serviceSubList = serviceSubList + '<p class="service-sub-other-text" id="instagramSaveElement'+i+'" onclick="selectToSubService(\'instagramSaveElement'+i+'\')">' + instagramSaveArray[i] + '</p>';
+  }
+
+  $('#service-sub-list').html(serviceSubList);
+  clearData4();
 
     } else if(sosialNetworkElement == 'Facebook' && serviceElement == 'Abunə, Səhifə bəyənilməsi'){
 
@@ -361,6 +371,10 @@ function selectToSubService(id){
     } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Baxış' && serviceSubElement == 'IGTV baxışlar') {
         clearData5();
         setMinMaxQuantity(50, 10000000);
+      
+    } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Yadda saxla' && serviceSubElement == 'Yadda saxla') {
+      clearData5();
+      setMinMaxQuantity(500, 20000);
 
     } else if(sosialNetworkElement == 'Facebook' && serviceElement == 'Abunə, Səhifə bəyənilməsi' && serviceSubElement == 'Səhifə like-ları | Qarışıq | Sürətli') {
         clearData5();
@@ -535,6 +549,10 @@ function calculatePrice(serviceType){
     } else if(serviceType == 'IGTV baxışlar'){
         price = order * 0.00018;
 
+    } else if(serviceType == 'Yadda saxla'){
+  price = order * 0.0015;
+
+      
     } else if(serviceType == 'Abunəlik | Qarışıq'){
         price = order * 0.1174;
 
@@ -630,7 +648,7 @@ function openInstagram(){
 }
 
 function openWhatsApp(){
-    window.open("https://wa.me/13024992023");
+    window.open("https://wa.me/994506338010");
 }
 
 function showLangContent(){
@@ -698,6 +716,11 @@ var instagramWatchArray = [
                         "Story baxış | Yüksək keyfiyyət", 
                         "Video baxış | Max 500k", 
                         "IGTV baxışlar"
+                    ];
+
+var instagramSaveArray = [
+                        "--Siyahıdan seçin...", 
+                        "Yadda saxla"
                     ];
 
 var facebookServiceArray = [
