@@ -366,7 +366,7 @@ function selectToSubService(id){
 
     } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Baxış' && serviceSubElement == 'Video baxış | Max 500k') {
         clearData5();
-        setMinMaxQuantity(100, 500000);
+        setMinMaxQuantity(1000, 500000);
 
     } else if(sosialNetworkElement == 'Instagram' && serviceElement == 'Baxış' && serviceSubElement == 'IGTV baxışlar') {
         clearData5();
@@ -544,7 +544,7 @@ function calculatePrice(serviceType){
         price = order * 0.00044;
 
     } else if(serviceType == 'Video baxış | Max 500k'){
-        price = order * 0.00004;
+        price = order * 0.0005;
 
     } else if(serviceType == 'IGTV baxışlar'){
         price = order * 0.00018;
