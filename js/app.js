@@ -544,7 +544,7 @@ function calculatePrice(serviceType){
         price = order * 0.00044;
 
     } else if(serviceType == 'Video baxış | Max 500k'){
-        price = order * 0.0005;
+        price = order * 0.0006;
 
     } else if(serviceType == 'IGTV baxışlar'){
         price = order * 0.00018;
