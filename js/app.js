@@ -511,7 +511,7 @@ function calculatePrice(serviceType){
         price = order * 0.0095;
 
     } else if(serviceType == 'Max 1k | Sürətli çatdırılma'){
-        price = order * 0.0023;
+        price = order * 0.0029;
 
     } else if(serviceType == 'Likes + Baxışlar | Şəkil və ya Video | Max 30k | 0-1 s | 80% bot Xarici 20% bot Türk'){
         price = order * 0.0035;
