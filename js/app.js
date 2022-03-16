@@ -553,7 +553,7 @@ function calculatePrice(serviceType){
         price = order * 0.0015;
       
     } else if(serviceType == 'Abunəlik | Qarışıq'){
-        price = order * 0.0009;
+        price = order * 0.0015;
 
     } else if(serviceType == 'Video Like'){
         price = order * 0.0514;
